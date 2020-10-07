@@ -8,20 +8,15 @@ async function getInfo() {
   if (info.status !== 200) {
     title.innerHTML = 'Информация о пользователе не доступна';
   } else {
-      let avatar = content.avatar_url;
-      let name = content.name;
-      let bio = content.bio;
-      let page = content.html_url;
-
       let link = document.createElement('a');
-      link.innerHTML = name;
-      link.href = page;
+      link.innerHTML = content.name;
+      link.href = content.html_url;
       title.prepend(link);
       let photo = document.createElement('img');
-      photo.src = avatar;
+      photo.src = content.avatar_url;
       title.after(photo);
       let des = document.createElement('p');
-      des.innerHTML = bio;
+      des.innerHTML = content.bio;
       photo.after(des);
   };
 };
