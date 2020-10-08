@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.time {
+  color: #93888C;
+  font-size: 20px;
+}
+
+.title {
+  color: #573E24;
+  text-decoration: none;
+  margin-top: 50px;
+}
+
+.photo {
+  display: inline-block;
+  border: 2px solid #573E24;
+  border-radius: 50px;
+}
+
+.description {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 36px;
+  color: #573E24;
+  margin-left: 130px;
+}
