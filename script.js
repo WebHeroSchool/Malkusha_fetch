@@ -3,6 +3,7 @@ let body = document.getElementsByTagName('body');
 let time = document.createElement('p');
 time.className = 'time';
 document.body.prepend(time);
+let preload = document.getElementById('preloader')
 let today = new Promise((resolve, reject) => {
   setTimeout(() => resolve(time.innerHTML = new Date), 2000);
 });
@@ -33,4 +34,6 @@ async function getInfo() {
   };
 };
 
-Promise.all([today,acc]);
+Promise.all([today,acc])
+  .then(() => preload.classList.toggle('hide'))
+  .then(() => document.body.classList.toggle('body-promise'))
