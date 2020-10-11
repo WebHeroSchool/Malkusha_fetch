@@ -64,14 +64,13 @@ var y = new String("John");
 ```
 ## 4. Не используйте new Object()
 ***
-
-    +Используйте {} вместо new Object()
-    +Используйте "" вместо new String()
-    +Используйте 0 вместо new Number()
-    +Используйте false вместо new Boolean()
-    +Используйте [] вместо new Array()
-    +Используйте /()/ вместо new RegExp()
-    +Используйте function (){} вместо new Function()
+    + Используйте {} вместо new Object()
+    + Используйте "" вместо new String()
+    + Используйте 0 вместо new Number()
+    + Используйте false вместо new Boolean()
+    + Используйте [] вместо new Array()
+    + Используйте /()/ вместо new RegExp()
+    + Используйте function (){} вместо new Function()
 ***
 ```
 var x1 = {};           // new object
